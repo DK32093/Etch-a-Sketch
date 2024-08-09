@@ -25,6 +25,11 @@ let randomColor = function() {
 
 let changeBackground = function(e) { // create function to change the background
     e.target.style.background = randomColor();
+    let op = Number(window.getComputedStyle(e.target).getPropertyValue("opacity"));
+    if (op < 1) {
+        op = op + 0.1;
+        e.target.style.opacity = op;
+    };
 };
 
 boxes.forEach(function(box) { // apply listener with function to each element
