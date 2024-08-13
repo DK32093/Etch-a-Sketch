@@ -17,9 +17,9 @@ for (i = 1; i <= 16; i++) {
 let boxes = document.querySelectorAll(".box"); // retrieve all of class "box"
 
 let randomColor = function() {
-    let r = Math.round(Math.random() * 255);
-    let g = Math.round(Math.random() * 255);
-    let b = Math.round(Math.random() * 255);
+    let r = Math.round(Math.random() * 256);
+    let g = Math.round(Math.random() * 256);
+    let b = Math.round(Math.random() * 256);
     return "rgb(" + r + "," + g + "," + b + ")"
 }
 
@@ -40,7 +40,7 @@ boxes.forEach(function(box) { // apply listener with function to each element
 // get size choice function
 function getSizeChoice() {
     let answer = prompt("Please enter the length of one side of the grid (max = 100)");
-    if (answer <= 100) {
+    if (answer <= 100 && answer > 0) {
         return answer;
     } else {
         return getSizeChoice();
