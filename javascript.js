@@ -10,8 +10,8 @@ for (i = 1; i <= 16; i++) {
         let newDiv = document.createElement("div");
         column.appendChild(newDiv);
         newDiv.setAttribute("class", "box");
-    }
-}
+    };
+};
 
 // mouseenter event listener
 let boxes = document.querySelectorAll(".box"); // retrieve all of class "box"
@@ -20,8 +20,8 @@ let randomColor = function() {
     let r = Math.round(Math.random() * 256);
     let g = Math.round(Math.random() * 256);
     let b = Math.round(Math.random() * 256);
-    return "rgb(" + r + "," + g + "," + b + ")"
-}
+    return "rgb(" + r + "," + g + "," + b + ")";
+};
 
 let changeBackground = function(e) { // create function to change the background
     e.target.style.background = randomColor();
@@ -44,8 +44,8 @@ function getSizeChoice() {
         return answer;
     } else {
         return getSizeChoice();
-    }
-}
+    };
+};
 
 // button press event listener for new grid
 let btn = document.querySelector(".btn");
@@ -61,8 +61,8 @@ btn.addEventListener("click", function() {
             let newDiv = document.createElement("div");
             column.appendChild(newDiv);
             newDiv.setAttribute("class", "box");
-        }
-    }
+        };
+    };
     // re-initialize the mouseenter event listener with new divs
     let boxes = document.querySelectorAll(".box");
     boxes.forEach(function(box) {
