@@ -1,7 +1,7 @@
 # Etch-a-Sketch
 
-I created this project while working through the curriculum of The Odin Project: https://www.theodinproject.com/
+Status: Completed
 
-I applied what I learned about HTML, CSS, and Javascript (including DOM manipulation) to create a webpage that functions similarly to an Etch-A-Sketch. The color of each box in the grid randomly changes as you mouse over them and the opacity decreases by 10% with each pass.
+A browser‑based Etch‑a‑Sketch built with HTML, CSS, and vanilla JavaScript. Each grid cell changes to a random color on hover, and its opacity decreases by 10% with each pass. This project focuses on DOM manipulation and dynamic styling.
 
-Live preview: https://dk32093.github.io/Etch-a-Sketch/
+Live Preview: https://dk32093.github.io/webdev-etch-a-sketch/
